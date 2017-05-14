@@ -9,7 +9,6 @@ config.h
 config.h.in
 config.log
 config.status
-configure
 configure.scan
 coverage_report
 depcomp
@@ -34,6 +33,4 @@ stamp-h1
 
 ###########
 *.test
-snubber/snubber
-sdl_video/sdlvideo
-snubber/.deps/
+foo/foo

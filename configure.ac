@@ -28,11 +28,11 @@ AM_CONDITIONAL([ENV_PRD], [test "x$ENV" != xDEV && test "x$ENV" != xTEST])
 AC_CONFIG_FILES([Makefile])
 
 # Production Makefile
-M_COND_IF([ENV_TEST], [],
+AM_COND_IF([ENV_TEST], [],
 	  [AC_CONFIG_FILES([foo/Makefile])])
 
 # Testing Makefile
-M_COND_IF([ENV_PRD], [],
+AM_COND_IF([ENV_PRD], [],
 	  [AC_CONFIG_FILES([foo_test/Makefile])])
 
 AC_OUTPUT
